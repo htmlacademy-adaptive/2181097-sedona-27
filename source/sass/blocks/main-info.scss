@@ -1,0 +1,40 @@
+.main-info__title{
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 24px;
+  text-align: center;
+  @media (min-width:$tablet){
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+.main-info__field{
+  background-color: #F2F2F2;
+  border:none;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 16px;
+  width: 280px;
+  height: 58px;
+}
+.main-info__field-title{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  @media (min-width:$tablet){
+    text-transform: uppercase;
+  }
+}
+.main-info{
+  border: none;
+  display: block;
+  @media (min-width:$tablet){
+    width: 50%;
+    display: grid;
+    margin-left: 60px;
+    margin-right: 42px;
+    padding: 0;
+  }
+}

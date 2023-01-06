@@ -1,0 +1,26 @@
+.contacts__hashtag{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+.social{
+  max-width: 156px;
+  align-items:center;
+}
+.academy-link__title{
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  margin-right: 12px;
+  @media (min-width:$tablet){
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    align-items: center;
+  }
+}
+.academy-link__logo{
+  width: 26px;
+  height: 34px;
+}

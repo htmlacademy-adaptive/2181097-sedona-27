@@ -1,0 +1,36 @@
+.content-block__list{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  @media (min-width:$tablet){
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+.content-card__title{
+  text-transform: uppercase;
+  margin-top: 15px;
+  @media (min-width:$tablet){
+    width: 324px;
+    height: 80px;
+  }
+}
+.content-card__likes-counter{
+  text-decoration: none;
+  text-transform:uppercase;
+  margin-top: 12px;
+}
+.content-block__item{
+  @media (min-width:$tablet){
+
+  }
+}
+.content-block__video{
+  @media (min-width:$tablet){
+    width: 648px;
+    height: 788px;
+  }
+}

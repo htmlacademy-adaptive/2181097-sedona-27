@@ -1,0 +1,37 @@
+.sublist{
+  font-size: 14px;
+  line-height: 21px;
+  list-style-type: none;
+  margin: 23px 18px 46px 18px;
+  text-align: center;
+  background-color: $base-color;
+  padding: 0;
+  @media (min-width:$tablet){
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: $base-color;
+  }
+}
+.sublist__item{
+  margin-top: 25px;
+  text-align: center;
+  @media (min-width:$tablet){
+    width: 256px;
+    height: 256px;
+    margin: 0 auto;
+    padding: 60px 33px;
+  }
+}
+.item__title{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.item__description{
+  @media (min-width:$tablet){
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,29 @@
+.content-block__video{
+  display: block;
+  text-align: center;
+  margin-left: 26px;
+  margin-right:  26px;
+  width: 266px;
+  @media (min-width:$tablet){
+    width: 648px;
+    margin: 60px 60px 40px 60px;
+  }
+}
+.video__title{
+  font-size:  18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.video__file{
+  margin-top: 38px;
+  @media (min-width:$tablet){
+    width: 648px;
+    height: 500px;
+  }
+}
+.video__description{
+  font-size:  14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+.main-header{
+  background-color: $base-color;
+  position: relative;
+  @media (min-width:$tablet){
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.main-header__logo{
+  margin: 0 auto;
+}
+.main-nav__toggle{
+  position: absolute;
+  left: 277px;
+  top:26px;
+  @media (min-width:$tablet){
+    display:none;
+  }
+}

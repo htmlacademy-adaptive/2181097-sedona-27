@@ -1,0 +1,43 @@
+.item__photo{
+  background-color:$background-color;
+  width: 100%;
+  @media (min-width:$tablet){
+    width: 66.66%;
+    height: 256px;
+  }
+}
+.item__title{
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.item__description{
+  margin-top: 17px;
+}
+.item__number{
+  margin-top: 11px;
+}
+
+.item__text-block{
+  @media (min-width:$tablet){
+    width: 33.33%;
+    height: 256px;
+    padding: 52px 33px 31px 33px;
+  }
+}
+
+.item__template{
+  @media (min-width:$tablet){
+    width: 256px;
+    height: 256px;
+  }
+}
+.item--text-item{
+  @media (min-width:$tablet){
+    width: 33.33%;
+    padding: 52px 33px 31px 33px;
+    height: 256px;
+  }
+}
