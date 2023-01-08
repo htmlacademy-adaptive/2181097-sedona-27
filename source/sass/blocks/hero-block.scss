@@ -1,0 +1,45 @@
+.hero-block__banner {
+  display: block;
+
+  @media (min-width: $tablet) {
+    width: 460px;
+    height: 350px;
+    margin: 77px auto 90px;
+  }
+}
+
+.hero-block__wrapper {
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.hero-block {
+  background-image: url("../img/main/back-mobile.jpg");
+  background-color: $background-color;
+  background-size: 100%;
+  padding: 90px 19px 85px 19px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 78px 0 90px;
+  }
+}
+
+.hero-block__banner--catalog-banner {
+  width: 230px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 456px;
+    height: 78px;
+    background-size: 768px 290px;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}

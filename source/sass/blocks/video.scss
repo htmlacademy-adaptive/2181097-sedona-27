@@ -1,0 +1,37 @@
+
+.video__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.video__file {
+  margin-top: 38px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+    margin-top: 64px;
+  }
+}
+
+.video__description {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}

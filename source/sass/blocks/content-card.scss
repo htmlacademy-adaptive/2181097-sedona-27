@@ -1,0 +1,48 @@
+.content-card__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.content-card {
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+    height: 480px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
+}
+
+.content-card__likes-counter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.content-card__photo {
+  display: block;
+  width: 100%;
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
+}
+
+.content-card--small {
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 33.33%;
+  }
+}
+
+.content-card__link {
+  display: block;
+}

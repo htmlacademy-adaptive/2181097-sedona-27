@@ -1,0 +1,42 @@
+.review-texts {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  color: #000000;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    width: 648px;
+    height: 234px;
+  }
+}
+
+.review-texts__text {
+  width: 246px;
+  height: 118px;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  border: none;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+    height: 160px;
+  }
+}
+
+.review-texts__field {
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    width: 402px;
+    height: 26px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,69 @@
+.intro {
+  text-align: center;
+  margin: 30px 20px 14px 20px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    height: 246px;
+    padding: 66px 154px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 370px 65px 370px;
+    height: 288px;
+  }
+}
+
+.intro__title {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.intro__description {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+
+  @media (min-width: $tablet) {
+    width: 434px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    width: 435px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.intro--form-intro {
+  @media (min-width: $tablet) {
+    width: 100%;
+    height: 260px;
+    padding: 66px 154px 102px 154px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 64px 166px 102px 166px;
+  }
+}

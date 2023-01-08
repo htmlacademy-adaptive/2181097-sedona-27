@@ -1,0 +1,38 @@
+.hero-texts {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  margin: 32px 18px 16px 18px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    height: 256px;
+    padding: 48px 124px 56px 124px;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+}
+
+.hero-texts__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.hero-texts__desription {
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+}

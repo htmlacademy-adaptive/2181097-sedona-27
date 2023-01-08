@@ -2,6 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title class="visually-hidden">HTML Academy: Седона</title>
   </head>
   <body class="page__body">
@@ -37,34 +39,36 @@
       <section class="hero-block">
         <div class="hero-block__wrapper">
           <h2 class="visually-hidden">Гостиницы Седоны</h2>
-          <img class="hero-block__banner" src="./img/catalog/sedona-catalog-hero-text.svg" width="229" height="39" alt="Седона">
+          <img class="hero-block__banner hero-block__banner--catalog-banner" src="./img/catalog/sedona-catalog-hero-text.svg" width="229" height="39" alt="Седона">
         </div>
       </section>
       <section class="review-block">
         <div class="review-block__wrapper">
-          <div class="intro">
+          <div class="intro--form-intro">
             <h1 class="intro__title">Оставьте свой отзыв</h1>
-            <p class="intro__description">Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
+            <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="review-block-form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="main-info">
-              <h2 class="main-info__title">Представьтесь:</h2>
-            <label class="main-info__field-title" for="user-name">Имя:</label>
-            <input class="main-info__field" type="text" id="user-name" name="name-of-user" placeholder="Петр">
-            <label class="main-info__field-title" for="user-surname">Фамилия:</label>
-            <input class="main-info__field" type="text" id="user-surname" name="surname-of-user" placeholder="Пустота">
-            <label class="main-info__field-title" for="user-patronymic">Отчество:</label>
-            <input class="main-info__field" type="text" id="user-patronymic" name="patronymic" placeholder="Викторович">
+            <div class="review-block__primary-block">
+              <fieldset class="main-info">
+                <h2 class="main-info__title">Представьтесь:</h2>
+              <label class="main-info__field-title" for="user-name">Имя*:</label>
+              <input class="main-info__field" type="text" id="user-name" name="name-of-user" placeholder="Петр">
+              <label class="main-info__field-title" for="user-surname">Фамилия*:</label>
+              <input class="main-info__field" type="text" id="user-surname" name="surname-of-user" placeholder="Пустота">
+              <label class="main-info__field-title" for="user-patronymic">Отчество:</label>
+              <input class="main-info__field" type="text" id="user-patronymic" name="patronymic" placeholder="Викторович">
+              </fieldset>
+            <fieldset class="user-contacts">
+              <h2 class="user-contacts__title">Контактная информация:</h2>
+              <p class="user-contacts__subtitle">Контактный телефон*:</p>
+              <label class="user-contacts__phone" for="user-phone"></label>
+              <input class="user-contacts__field" type="number" id="user-phone" name="phone-number" placeholder="Введите телефон">
+              <p class="user-contacts__subtitle">Электронная почта*:</p>
+              <label class="user-contacts__email" for="user-mail"></label>
+              <input class="user-contacts__field" type="email" id="user-mail" name="user-email" placeholder="Введите e-mail">
             </fieldset>
-          <fieldset class="user-contacts">
-            <h2 class="user-contacts__title">Контактная информация:</h2>
-            <p class="user-contacts__subtitle">Контактный телефон*:</p>
-            <label class="user-contacts__phone" for="user-phone"></label>
-            <input class="user-contacts__field" type="number" id="user-phone" name="phone-number" placeholder="Введите телефон">
-            <p class="user-contacts__subtitle">Электронная почта*:</p>
-            <label class="user-contacts__email" for="user-mail"></label>
-            <input class="user-contacts__field" type="email" id="user-mail" name="user-email" placeholder="Введите e-mail">
-          </fieldset>
+            </div>
           <fieldset class="review-block__radio radio">
             <h2 class="radio__title">Ваше общее впечатление:</h2>
             <ul class="radio__list">
@@ -88,20 +92,20 @@
               <li class="checkbox__item">
                 <input class="visually-hidden control-input" type="checkbox" name="devils-bridge" id="bridge-of-devil" checked>
                 <label class="control" for="bridge-of-devil">  <span class="control-mark"></span>Мост Дьявола</label>
-             </li>
-             <li class="checkbox__item">
-              <input class="visually-hidden control-input" type="checkbox" name="bell-mountain" id="mountain-bell" checked>
-              <label class="control" for="mountain-bell">  <span class="control-mark"></span>Гора-Колокол</label>
-           </li>
-           <li class="checkbox__item">
-            <input class="visually-hidden control-input" type="checkbox" name="slide-park" id="park-slide" checked>
-            <label class="control" for="park-slide">  <span class="control-mark"></span>Слайд-парк</label>
-           </li>
-           <li class="checkbox__item">
-            <input class="visually-hidden control-input" type="checkbox" name="red-rocks" id="rocks-red">
-            <label class="control" for="rocks-red">  <span class="control-mark"></span>Красные скалы</label>
-           </li>
-          </ul>
+              </li>
+              <li class="checkbox__item">
+                <input class="visually-hidden control-input" type="checkbox" name="bell-mountain" id="mountain-bell" checked>
+                <label class="control" for="mountain-bell">  <span class="control-mark"></span>Гора-Колокол</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="visually-hidden control-input" type="checkbox" name="slide-park" id="park-slide" checked>
+                <label class="control" for="park-slide">  <span class="control-mark"></span>Слайд-парк</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="visually-hidden control-input" type="checkbox" name="red-rocks" id="rocks-red">
+                <label class="control" for="rocks-red">  <span class="control-mark"></span>Красные скалы</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="review-block__texts review-texts">
             <label class="review-texts__field" for="text-review">Опишите свои эмоции:</label>
@@ -119,7 +123,7 @@
     </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-            <img class="page-footer__map" src="./img/main/map-mobile.jpg.jpg" width="320" height="350" alt="Карта расположения Седоны">
+            <img class="page-footer__map" src="./img/main/map-mobile.jpg" width="320" height="350" alt="Карта расположения Седоны">
           <section class="page-footer__contacts contacts">
             <div class="contacts__wrapper">
               <p class="contacts__hashtag">#visitsedona</p>

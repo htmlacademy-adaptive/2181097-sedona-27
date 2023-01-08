@@ -1,0 +1,53 @@
+.review-block__button {
+  background-color: $background-color;
+  width: 280px;
+  height: 58px;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 56px;
+
+  @media (min-width: $tablet) {
+    width: 324px;
+    height: 58px;
+    margin: 0 auto 0 0;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+}
+
+.review-block__subtitle {
+  font-size: 12px;
+  line-height: 21px;
+  margin-top: 3px;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.review-block__primary-block {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 60px 60px 60px;
+  }
+}
+
+.review-block__radio {
+  @media (min-width: $tablet) {
+    width: 648px;
+    height: 162px;
+    padding: 62px 60px 58px 60px;
+    align-items: center;
+  }
+}
+
+.review-block__footer {
+  @media (min-width: $tablet) {
+    display: flex;
+    width: 648px;
+    margin: 48px 60px 64px 60px;
+  }
+}
