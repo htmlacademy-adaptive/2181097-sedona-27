@@ -1,15 +1,17 @@
 .page {
   font-family: "PT Sans", sans-serif;
-	min-height: 100%;
-	background-color: #ffffff;
-	font-size:21px;
-	line-height:14px;
-	width:$mobile;
+  min-height: 100%;
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 14px;
+  width: $mobile;
   margin: 0 auto;
-  @media (min-width:$tablet){
-    width:$tablet;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
   }
-  @media (min-width:$desktop){
-    width:$desktop;
+
+  @media (min-width: $desktop) {
+    width: $desktop;
   }
 }

@@ -1,43 +1,70 @@
-.item__photo{
-  background-color:$background-color;
+.item__photo {
+  background-color: $background-color;
   width: 100%;
-  @media (min-width:$tablet){
+
+  @media (min-width: $tablet) {
     width: 66.66%;
     height: 256px;
   }
+
+  @media (min-width: $desktop) {
+    width: 66.66%;
+  }
 }
-.item__title{
+
+.item__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 auto;
 }
-.item__description{
+
+.item__description {
   margin-top: 17px;
 }
-.item__number{
+
+.item__number {
   margin-top: 11px;
 }
 
-.item__text-block{
-  @media (min-width:$tablet){
+.item__text-block {
+  @media (min-width: $tablet) {
     width: 33.33%;
     height: 256px;
     padding: 52px 33px 31px 33px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 33.33%;
   }
 }
 
-.item__template{
-  @media (min-width:$tablet){
+.item__template {
+  @media (min-width: $tablet) {
     width: 256px;
     height: 256px;
   }
+
+  @media (min-width: $desktop) {
+    width: 400px;
+  }
 }
-.item--text-item{
-  @media (min-width:$tablet){
+
+.item--text-item {
+  @media (min-width: $tablet) {
     width: 33.33%;
     padding: 52px 33px 31px 33px;
     height: 256px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 63px 50px 41px 50px;
+  }
+}
+
+.item--text-item:nth-child(2) {
+  @media (min-width: $desktop) {
+    padding: 52px 50px 51px 50px;
   }
 }

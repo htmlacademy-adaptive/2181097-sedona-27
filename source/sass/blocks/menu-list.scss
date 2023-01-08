@@ -1,15 +1,17 @@
-.menu-list{
-  @media (min-width:$tablet){
+.menu-list {
+  list-style: none;
+
+  @media (min-width: $tablet) {
     display: flex;
     padding: 0;
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
   }
-  list-style: none;
 }
-.menu-list__item{
-  @media (min-width:$tablet){
+
+.menu-list__item {
+  @media (min-width: $tablet) {
     width: 20%;
     height: 56px;
     align-items: center;
@@ -17,13 +19,15 @@
     justify-content: center;
   }
 }
-.menu-list__item a{
-  @media (min-width:$tablet){
+
+.menu-list__item a {
+  @media (min-width: $tablet) {
     color: #000000;
   }
 }
-.menu-list__item:nth-child(3){
-  @media (min-width:$tablet){
+
+.menu-list__item:nth-child(3) {
+  @media (min-width: $tablet) {
     margin-left: 20%;
   }
 }

@@ -1,43 +1,49 @@
-.user-contacts{
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-    text-align: center;
-    border: none;
-    display: block;
-    @media (min-width:$tablet){
-      width: 50%;
-      display: grid;
-      margin-left: 60px;
-      margin-right: 44px;
-      padding: 0;
-    }
+.user-contacts {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  display: block;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    display: grid;
+    margin-left: 60px;
+    margin-right: 44px;
+    padding: 0;
+  }
 }
-.user-contacts__title{
+
+.user-contacts__title {
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 20px;
-  @media (min-width:$tablet){
+
+  @media (min-width: $tablet) {
     font-size: 21px;
     line-height: 26px;
     width: 278px;
     height: 26px;
   }
 }
-.user-contacts__field{
+
+.user-contacts__field {
   width: 280px;
   height: 58px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.3);
   border: none;
 }
-.user-contacts__subtitle{
+
+.user-contacts__subtitle {
   font-size: 14px;
   line-height: 21px;
-  @media (min-width:$tablet){
+
+  @media (min-width: $tablet) {
     text-align: left;
   }
 }

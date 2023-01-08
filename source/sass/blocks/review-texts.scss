@@ -1,4 +1,4 @@
-.review-texts{
+.review-texts {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -6,7 +6,8 @@
   border: none;
   font-weight: 700;
   color: #000000;
-  @media (min-width:$tablet){
+
+  @media (min-width: $tablet) {
     margin: 0 auto;
     padding: 0;
     display: grid;
@@ -14,23 +15,25 @@
     height: 234px;
   }
 }
-.review-texts__text{
+
+.review-texts__text {
   width: 246px;
   height: 118px;
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
   border: none;
-  background-color:  #F2F2F2;
+  background-color: #f2f2f2;
   margin-top: 20px;
-  @media (min-width:$tablet){
+
+  @media (min-width: $tablet) {
     width: 648px;
     height: 160px;
-    text-align: start;
   }
 }
-.review-texts__field{
-  @media (min-width:$tablet){
+
+.review-texts__field {
+  @media (min-width: $tablet) {
     font-size: 21px;
     width: 402px;
     height: 26px;

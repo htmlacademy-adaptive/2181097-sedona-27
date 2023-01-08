@@ -1,10 +1,16 @@
-.page-footer{
+.page-footer {
   list-style-type: none;
 }
-.page-footer__map{
+
+.page-footer__map {
   margin-top: 50px;
-  @media (min-width:$tablet){
+
+  @media (min-width: $tablet) {
     width: 768px;
     height: 350px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1200px;
   }
 }
