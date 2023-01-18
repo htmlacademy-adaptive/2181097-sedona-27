@@ -48,6 +48,11 @@
   @media (min-width: $tablet) {
     display: flex;
     width: 648px;
-    margin: 48px 60px 64px 60px;
+    margin: 48px auto 64px auto;
+    align-items: center;
+    justify-content: space-between;
   }
+}
+.user-contacts__field {
+  background-image: url("../img/form/phone");
 }

@@ -29,14 +29,30 @@
 }
 
 .user-contacts__field {
-  width: 280px;
-  height: 58px;
   background-color: #f2f2f2;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.3);
   border: none;
+}
+
+.user-contacts__field--phone {
+  background-image: url("../img/form/phone-frame.svg");
+  background-position: 222px;
+  background-size: 58px 58px;
+  background-repeat: no-repeat;
+  height: 58px;
+  width: 280px;
+}
+
+.user-contacts__field--mail {
+  background-image: url("../img/form/mail-frame.svg");
+  background-position: 222px;
+  background-size: 58px 58px;
+  background-repeat: no-repeat;
+  height: 58px;
+  width: 280px;
 }
 
 .user-contacts__subtitle {

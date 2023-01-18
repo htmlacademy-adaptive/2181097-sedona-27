@@ -19,22 +19,6 @@
   }
 }
 
-.content-card__title {
-  text-transform: uppercase;
-  margin-top: 15px;
-
-  @media (min-width: $tablet) {
-    width: 324px;
-    height: 80px;
-  }
-}
-
-.content-card__likes-counter {
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-top: 12px;
-}
-
 .content-block__item {
   @media (min-width: $desktop) {
     width: 100%;

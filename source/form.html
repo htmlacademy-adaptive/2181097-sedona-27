@@ -18,13 +18,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__menu-list menu-list">
             <li class="menu-list__item">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="menu-list__item">
-              <a href="#">Фото и видео</a>
+              <a href="catalog.html">Фото и видео</a>
             </li>
             <li class="menu-list__item">
-              <a href="#">Форма отзыва</a>
+              <a>Форма отзыва</a>
             </li>
             <li class="menu-list__item">
               <a href="#">Html Academy</a>
@@ -63,47 +63,47 @@
               <h2 class="user-contacts__title">Контактная информация:</h2>
               <p class="user-contacts__subtitle">Контактный телефон*:</p>
               <label class="user-contacts__phone" for="user-phone"></label>
-              <input class="user-contacts__field" type="number" id="user-phone" name="phone-number" placeholder="Введите телефон">
+              <input class="user-contacts__field--phone" type="number" id="user-phone" name="phone-number" placeholder="Введите телефон">
               <p class="user-contacts__subtitle">Электронная почта*:</p>
               <label class="user-contacts__email" for="user-mail"></label>
-              <input class="user-contacts__field" type="email" id="user-mail" name="user-email" placeholder="Введите e-mail">
+              <input class="user-contacts__field--mail" type="email" id="user-mail" name="user-email" placeholder="Введите e-mail">
             </fieldset>
             </div>
           <fieldset class="review-block__radio radio">
             <h2 class="radio__title">Ваше общее впечатление:</h2>
             <ul class="radio__list">
-              <li class="radio__item">
-                <input class="visually-hidden control-input" type="radio" name="positive-review" value="review-mark" id="positive" checked>
-                <label class="control" for="positive"><span class="control-mark-radio"></span>Скорее положительное</label>
+              <li class="radio__item radio-block">
+                <input class="visually-hidden radio-block__input" type="radio" name="review" value="review-mark" id="positive" checked>
+                <label class="radio-block__label" for="positive"><span class="radio-block__mark-radio"></span>Скорее положительное</label>
               </li>
-              <li class="radio__item">
-                <input class="visually-hidden control-input" type="radio" name="negative-review" value="review-mark" id="negative">
-                <label class="control" for="negative"><span class="control-mark-radio"></span>Скорее отрицательное</label>
+              <li class="radio__item radio-block">
+                <input class="visually-hidden radio-block__input" type="radio" name="review" value="review-mark" id="negative">
+                <label class="radio-block__label" for="negative"><span class="radio-block__mark-radio"></span>Скорее отрицательное</label>
               </li>
-              <li class="radio__item">
-                <input class="visually-hidden control-input" type="radio" name="neutral-review" value="review-mark" id="neutral">
-                <label class="control" for="neutral"><span class="control-mark-radio"></span>Затрудняюсь ответить</label>
+              <li class="radio__item radio-block">
+                <input class="visually-hidden radio-block__input" type="radio" name="review" value="review-mark" id="neutral">
+                <label class="radio-block__label" for="neutral"><span class="radio-block__mark-radio"></span>Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="review-block__checkbox checkbox">
             <h2 class="checkbox__title">Посещенные достопримечательности:</h2>
             <ul class="checkbox__list">
-              <li class="checkbox__item">
-                <input class="visually-hidden control-input" type="checkbox" name="devils-bridge" id="bridge-of-devil" checked>
-                <label class="control" for="bridge-of-devil">  <span class="control-mark"></span>Мост Дьявола</label>
+              <li class="checkbox__item checkbox-block">
+                <input class="visually-hidden checkbox-block__input" type="checkbox" name="sightseens" id="bridge-of-devil" checked>
+                <label class="checkbox-block__label" for="bridge-of-devil">  <span class="checkbox-block__mark"></span>Мост Дьявола</label>
               </li>
-              <li class="checkbox__item">
-                <input class="visually-hidden control-input" type="checkbox" name="bell-mountain" id="mountain-bell" checked>
-                <label class="control" for="mountain-bell">  <span class="control-mark"></span>Гора-Колокол</label>
+              <li class="checkbox__item checkbox-block">
+                <input class="visually-hidden checkbox-block__input" type="checkbox" name="sightseens" id="mountain-bell" checked>
+                <label class="checkbox-block__label" for="mountain-bell">  <span class="checkbox-block__mark"></span>Гора-Колокол</label>
               </li>
-              <li class="checkbox__item">
-                <input class="visually-hidden control-input" type="checkbox" name="slide-park" id="park-slide" checked>
-                <label class="control" for="park-slide">  <span class="control-mark"></span>Слайд-парк</label>
+              <li class="checkbox__item checkbox-block">
+                <input class="visually-hidden checkbox-block__input" type="checkbox" name="sightseens" id="park-slide" checked>
+                <label class="checkbox-block__label" for="park-slide">  <span class="checkbox-block__mark"></span>Слайд-парк</label>
               </li>
-              <li class="checkbox__item">
-                <input class="visually-hidden control-input" type="checkbox" name="red-rocks" id="rocks-red">
-                <label class="control" for="rocks-red">  <span class="control-mark"></span>Красные скалы</label>
+              <li class="checkbox__item checkbox-block">
+                <input class="visually-hidden checkbox-block__input" type="checkbox" name="sightseens" id="rocks-red">
+                <label class="checkbox-block__label" for="rocks-red">  <span class="checkbox-block__mark"></span>Красные скалы</label>
               </li>
             </ul>
           </fieldset>
@@ -123,7 +123,6 @@
     </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-            <img class="page-footer__map" src="./img/main/map-mobile.jpg" width="320" height="350" alt="Карта расположения Седоны">
           <section class="page-footer__contacts contacts">
             <div class="contacts__wrapper">
               <p class="contacts__hashtag">#visitsedona</p>

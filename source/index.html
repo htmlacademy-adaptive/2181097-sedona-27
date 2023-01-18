@@ -11,7 +11,7 @@
       <a class="main-header__logo logo">
         <img class="logo__image" src="./img/main/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -21,10 +21,10 @@
               <a>Главная</a>
             </li>
             <li class="menu-list__item">
-              <a href="#">Фото и видео</a>
+              <a href="catalog.html">Фото и видео</a>
             </li>
             <li class="menu-list__item">
-              <a href="#">Форма отзыва</a>
+              <a href="form.html">Форма отзыва</a>
             </li>
             <li class="menu-list__item">
               <a href="#">Html Academy</a>
@@ -56,15 +56,15 @@
               </div>
               <img class="item__photo" src="./img/main/content-photo-true-city-main.jpg" width="320" height="350" alt="Городские пейзажи Седоны">
               <ul class="item__list sublist">
-                <li class="sublist__item">
+                <li class="sublist__item sublist__item--housing">
                   <h3 class="item__title">Жилье</h3>
                   <p class="item__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class="sublist__item">
+                <li class="sublist__item sublist__item--food">
                   <h3 class="item__title">Еда</h3>
                   <p class="item__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class="sublist__item">
+                <li class="sublist__item sublist__item--souvenire">
                   <h3 class="item__title">Сувениры</h3>
                   <p class="item__description">Не только китайского, но и местного производства!</p>
                 </li>
@@ -111,7 +111,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-          <img class="page-footer__map" src="./img/main/map-mobile.jpg" width="320" height="350" alt="Карта расположения Седоны">
+        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505975266!2d-111.83015799054338!3d34.85437338103421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673829327679!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+        </iframe>
         <section class="page-footer__contacts contacts">
           <div class="contacts__wrapper">
             <p class="contacts__hashtag">#visitsedona</p>
