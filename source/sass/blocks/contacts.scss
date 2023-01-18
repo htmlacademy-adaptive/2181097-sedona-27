@@ -32,22 +32,24 @@
     height: 34px;
     display: flex;
     margin-right: 76px;
+    margin-bottom: 43px;
   }
 }
 
 .contacts__social {
   margin-top: 32px;
   list-style-type: none;
-
-  @media (min-width: $tablet) {
-    width: 156px;
-    height: 48px;
-  }
 }
 
 .contacts {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+
   @media (min-width: $tablet) {
     width: 100%;
     height: 120px;
   }
 }
+
