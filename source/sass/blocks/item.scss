@@ -3,12 +3,13 @@
   width: 100%;
 
   @media (min-width: $tablet) {
-    width: 66.66%;
+    object-fit: cover;
+    display: block;
     height: 256px;
   }
-
   @media (min-width: $desktop) {
-    width: 66.66%;
+    object-fit: cover;
+    display: block;
   }
 }
 
@@ -66,5 +67,10 @@
 .item--text-item:nth-child(2) {
   @media (min-width: $desktop) {
     padding: 52px 50px 51px 50px;
+  }
+}
+.item--someshit {
+  @media (min-width: $tablet) {
+    flex-direction: row-reverse;
   }
 }

@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <title class="visually-hidden">HTML Academy: Седона</title>
   </head>
   <body class="page__body">
@@ -11,7 +15,7 @@
       <a class="main-header__logo logo">
         <img class="logo__image" src="./img/main/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -54,7 +58,11 @@
                 <span class="item__number">№1</span>
                 <p class="item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="item__photo" src="./img/main/content-photo-true-city-main.jpg" width="320" height="350" alt="Городские пейзажи Седоны">
+              <picture>
+                 <source media="(min-width: 1200px)" srcset="img/main/content-photo-city-desktop.jpg 1x, img/main/content-photo-city-desktop@2x.jpg 2x">
+                 <source media="(min-width: 768px)" srcset="img/main/content-photo-city-tablet.jpg 1x, img/main/content-photo-city-tablet@2x.jpg 2x">
+                <img class="item__photo" src="img/main/content-photo-true-city-main.jpg " width="320" height="350" srcset="img/main/content-photo-true-city-main@2x.jpg 2x" alt="Городские пейзажи Седоны">
+              </picture>
               <ul class="item__list sublist">
                 <li class="sublist__item sublist__item--housing">
                   <h3 class="item__title">Жилье</h3>
@@ -70,13 +78,17 @@
                 </li>
               </ul>
             </li>
-            <li class="advantages__item item">
+            <li class="advantages__item item item--someshit">
               <div class="item__text-block">
               <h3 class="item__title">Там есть мост дьявола</h3>
               <span class="item__number">№2</span>
               <p class="item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-              <img class="item__photo" src="./img/main/content-photo-devil-bridge-main.jpg" width="320" height="260" alt="Городские пейзажи Седоны">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main/content-photo-bridge-desktop.jpg 1x, img/main/content-photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main/content-photo-bridge-tablet.jpg 1x, img/main/content-photo-bridge-tablet@2x.jpg 2x">
+             <img class="item__photo" src="img/main/content-photo-bridge.jpg" width="320" height="350" srcset="img/main/content-photo-bridge@2x.jpg 2x" alt="Городские пейзажи Седоны">
+           </picture>
             </li>
               <li class="advantages__item advantages__item--texts item item--text-item">
                 <div class="item__template">
