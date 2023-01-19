@@ -4,6 +4,7 @@
 
 .page-footer__map {
   margin-top: 50px;
+  max-width: 100%;
 
   @media (min-width: $tablet) {
     width: 768px;

@@ -18,14 +18,27 @@
   background-image: url("../img/main/back-mobile.jpg");
   background-color: $background-color;
   background-size: 100%;
+  background-repeat: no-repeat;
   padding: 90px 19px 85px 19px;
+  height: 389px;
+
+  @media (min-resolution: 2dppx){
+    background-image: url("../img/main/back-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet) {
     width: 100%;
+    height: 518px;
+    background-image: url("../img/main/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/back-desktop@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop) {
     padding: 78px 0 90px;
+
   }
 }
 
