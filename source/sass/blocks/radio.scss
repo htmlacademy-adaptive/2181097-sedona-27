@@ -6,6 +6,9 @@
   font-weight: 700;
   border: none;
   width: 280px;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet) {
     width: 648px;
@@ -22,6 +25,9 @@
 .radio__list {
   align-items: center;
   list-style: none;
+  margin-top: 20px;
+  width: 280px;
+  padding: 0;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -42,6 +48,9 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  width: 233px;
+  margin-left: 23px;
+  margin-top: 45px;
 
   @media (min-width: $tablet) {
     width: 402px;
@@ -54,7 +63,7 @@
 
 .radio__item {
   height: 46px;
-  margin-top: 20px;
+  margin-top: 17px;
 
   @media (min-width: $tablet) {
     width: 280px;

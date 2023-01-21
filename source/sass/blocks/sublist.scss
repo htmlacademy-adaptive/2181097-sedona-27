@@ -2,7 +2,7 @@
   font-size: 14px;
   line-height: 21px;
   list-style-type: none;
-  margin: 23px 18px 46px 18px;
+  margin: 0 18px 40px 18px;
   background-color: $base-color;
   padding: 0;
 
@@ -15,7 +15,7 @@
 }
 
 .sublist__item {
-  margin-top: 25px;
+  margin-top: 27px;
   position: relative;
   text-align: left;
   padding-left: 47px;
@@ -41,12 +41,15 @@
   }
 &--housing::before{
   background-image: url("../img/main/icon-house-advantages.svg");
+  margin-top: -10px;
 }
 &--food::before{
   background-image: url("../img/main/icon-burger-advantages.svg");
+  margin-top: -5px;
 }
 &--souvenire::before{
   background-image: url("../img/main/icon-gift-advantages.svg");
+  top: -9px;
 }
   @media (min-width: $tablet) {
     width: 256px;
@@ -61,6 +64,17 @@
     width: 400px;
     padding: 59px 60px 59px 60px;
   }
+}
+
+.sublist__item--food {
+  margin-top: 30px;
+  position: relative;
+  text-align: left;
+  padding-left: 47px;
+}
+
+.sublist__item--souvenire {
+  margin-top: 36px;
 }
 
 .item__title {
@@ -80,6 +94,7 @@
   line-height: 21px;
   color: #333333;
   text-transform: uppercase;
+  margin-top: 10px;
 
   @media (min-width: $tablet) {
     margin-bottom: 60px;

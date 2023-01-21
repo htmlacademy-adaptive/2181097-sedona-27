@@ -15,7 +15,7 @@
       <a class="main-header__logo logo">
         <img class="logo__image" src="./img/main/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -50,7 +50,7 @@
         <div class="review-block__wrapper">
           <div class="intro--form-intro">
             <h1 class="intro__title">Оставьте свой отзыв</h1>
-            <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <p class="intro__description--form-intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="review-block-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="review-block__primary-block">
@@ -67,10 +67,10 @@
               <h2 class="user-contacts__title">Контактная информация:</h2>
               <p class="user-contacts__subtitle">Контактный телефон*:</p>
               <label class="user-contacts__phone" for="user-phone"></label>
-              <input class="user-contacts__field--phone" type="number" id="user-phone" name="phone-number" placeholder="Введите телефон">
-              <p class="user-contacts__subtitle">Электронная почта*:</p>
+              <input class="user-contacts__field user-contacts__field--phone" type="number" id="user-phone" name="phone-number" placeholder="Введите телефон">
+              <p class="user-contacts__subtitle user-contacts__subtitle--mail">Электронная почта*:</p>
               <label class="user-contacts__email" for="user-mail"></label>
-              <input class="user-contacts__field--mail" type="email" id="user-mail" name="user-email" placeholder="Введите e-mail">
+              <input class="user-contacts__field user-contacts__field--mail" type="email" id="user-mail" name="user-email" placeholder="Введите e-mail">
             </fieldset>
             </div>
           <fieldset class="review-block__radio radio">
@@ -113,7 +113,8 @@
           </fieldset>
           <fieldset class="review-block__texts review-texts">
             <label class="review-texts__field" for="text-review">Опишите свои эмоции:</label>
-            <input class="review-texts__text" type="text" id="text-review" name="review-text" placeholder="Опишите подробно все свои восторги">
+            <textarea class="review-texts__text review-texts__text--noresize" id="text-review" name="review-text" placeholder="Опишите подробно все свои восторги">
+            </textarea>
           </fieldset>
           <div class="review-block__footer">
             <button class="review-block__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -165,5 +166,7 @@
           </section>
         </div>
       </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

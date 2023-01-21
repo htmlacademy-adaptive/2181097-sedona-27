@@ -1,5 +1,6 @@
 .hero-block__banner {
   display: block;
+  margin-top: -7px;
 
   @media (min-width: $tablet) {
     width: 460px;
@@ -17,10 +18,22 @@
 .hero-block {
   background-image: url("../img/main/back-mobile.jpg");
   background-color: $background-color;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 90px 19px 85px 19px;
-  height: 389px;
+  position: relative;
+
+  &::after {
+    background-image: url("../img/main/intro-triangle.svg");
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    background-position: center;
+    background-size: auto 57px;
+    width: 320px;
+    height: 57px;
+    }
 
   @media (min-resolution: 2dppx){
     background-image: url("../img/main/back-mobile@2x.jpg");

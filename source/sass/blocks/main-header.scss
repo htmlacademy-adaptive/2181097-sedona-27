@@ -2,6 +2,7 @@
   background-color: $base-color;
   position: relative;
   height: 56px;
+  z-index: 1;
 
   @media (min-width: $tablet) {
     font-weight: 700;
@@ -12,6 +13,7 @@
 
 .main-header__logo {
   margin: 0 auto;
+
   @media (min-width: $tablet){
     position: absolute;
     left: 50%;

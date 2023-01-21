@@ -29,3 +29,6 @@ a {
 *::after {
   box-sizing: border-box;
 }
+input, button, textarea {
+  font-family: inherit;
+}

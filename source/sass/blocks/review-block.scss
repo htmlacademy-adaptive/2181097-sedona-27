@@ -5,16 +5,19 @@
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 56px;
+  margin-top: 46px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 16px 49px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
 
   @media (min-width: $tablet) {
     width: 324px;
     height: 58px;
     margin: 0 auto 0 0;
-    color: #ffffff;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
   }
 }
 
@@ -23,6 +26,8 @@
   line-height: 21px;
   margin-top: 3px;
   color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
+  margin-left: 164px;
 }
 
 .review-block__primary-block {
@@ -36,6 +41,8 @@
 }
 
 .review-block__radio {
+  text-align: center;
+
   @media (min-width: $tablet) {
     width: 648px;
     height: 162px;
