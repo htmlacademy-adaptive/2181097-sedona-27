@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
@@ -53,14 +53,17 @@
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item item">
-              <div class="item__text-block">
+              <div class="item__text-block item__text-block--city">
                 <h3 class="item__title">Настоящий городок</h3>
-                <span class="item__number">№1</span>
+                <span class="item__number">- №1 -</span>
                 <p class="item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <picture>
-                 <source media="(min-width: 1200px)" srcset="img/main/content-photo-city-desktop.jpg 1x, img/main/content-photo-city-desktop@2x.jpg 2x">
-                 <source media="(min-width: 768px)" srcset="img/main/content-photo-city-tablet.jpg 1x, img/main/content-photo-city-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/main/content-photo-city-desktop.webp 1x, img/main/content-photo-city-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/main/content-photo-city-tablet.webp 1x, img/main/content-photo-city-tablet@2x.webp 2x">
+                <source media="(min-width: 0)" srcset="img/main/content-photo-city-tablet.webp 1x, img/main/content-photo-city-tablet@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/main/content-photo-city-desktop.jpg 1x, img/main/content-photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main/content-photo-city-tablet.jpg 1x, img/main/content-photo-city-tablet@2x.jpg 2x">
                 <img class="item__photo" src="img/main/content-photo-true-city-main.jpg " width="320" height="350" srcset="img/main/content-photo-true-city-main@2x.jpg 2x" alt="Городские пейзажи Седоны">
               </picture>
               <ul class="item__list sublist">
@@ -70,45 +73,48 @@
                 </li>
                 <li class="sublist__item sublist__item--food">
                   <h3 class="item__title">Еда</h3>
-                  <p class="item__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="item__description">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                 </li>
                 <li class="sublist__item sublist__item--souvenire">
                   <h3 class="item__title">Сувениры</h3>
-                  <p class="item__description">Не только китайского, но и местного производства!</p>
+                  <p class="item__description item__description--souvenire">Не&nbsp;только&nbsp;китайского,<br class="item__only-tablet">но&nbsp;и местного производства!</p>
                 </li>
               </ul>
             </li>
             <li class="advantages__item item item--someshit">
-              <div class="item__text-block">
-              <h3 class="item__title">Там есть мост дьявола</h3>
-              <span class="item__number">№2</span>
+              <div class="item__text-block item__text-block--bridge">
+              <h3 class="item__title">Там есть<br class="item__only-tablet">мост дьявола</h3>
+              <span class="item__number">- №2 -</span>
               <p class="item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/main/content-photo-bridge-desktop.jpg 1x, img/main/content-photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/main/content-photo-bridge-desktop@1x.webp 1x, img/main/content-photo-bridge-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/main/content-photo-bridge-tablet.webp 1x, img/main/content-photo-bridge-tablet@2x.webp 2x">
+              <source media="(min-width: 0)" srcset="img/main/content-photo-bridge-tablet.webp 1x, img/main/content-photo-bridge-tablet@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/main/content-photo-bridge-desktop@1x.jpg 1x, img/main/content-photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main/content-photo-bridge-tablet.jpg 1x, img/main/content-photo-bridge-tablet@2x.jpg 2x">
-             <img class="item__photo" src="img/main/content-photo-bridge.jpg" width="320" height="350" srcset="img/main/content-photo-bridge@2x.jpg 2x" alt="Городские пейзажи Седоны">
-           </picture>
+              <img class="item__photo" src="img/main/content-photo-bridge.jpg" width="320" height="350" srcset="img/main/content-photo-bridge@2x.jpg 2x" alt="Городские пейзажи Седоны">
+            </picture>
             </li>
-              <li class="advantages__item advantages__item--texts item item--text-item">
+              <li class="advantages__item advantages__item--texts item item--text-item item--padding">
                 <div class="item__template">
                   <h3 class="item__title">Небольшая площадь</h3>
-                  <span class="item__number">№3</span>
+                  <span class="item__number">- №3 -</span>
                   <p class="item__description">Все интересные места находятся очень близко</p>
                 </div>
                 </li>
-                <li class="advantages__item advantages__item--texts item item--text-item">
+                <li class="advantages__item advantages__item--texts item item--text-item item--road">
                   <div class="item__template">
                     <h3 class="item__title">Красивая дорога</h3>
-                    <span class="item__number">№4</span>
-                    <p class="item__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <span class="item__number">- №4 -</span>
+                    <p class="item__description">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
                   </div>
                 </li>
-                <li class="advantages__item advantages__item--texts item item--text-item">
+                <li class="advantages__item advantages__item--texts item item--text-item item--tourists item--padding">
                   <div class="item__template">
-                    <h3 class="item__title">Мало туристов</h3>
-                    <span class="item__number">№5</span>
-                    <p class="item__description">Большинство едет в гранд каньон и толпится там</p>
+                    <h3 class="item__title">Мало<br class="item__only-tablet">туристов</h3>
+                    <span class="item__number">- №5 -</span>
+                    <p class="item__description">Большинство&nbsp;едет&nbsp;в&nbsp;гранд каньон и толпится&nbsp;там</p>
                   </div>
               </li>
             </div>
@@ -117,13 +123,13 @@
       </section>
       <section class="main-container__hotel-search hotel-search">
         <h2 class="hotel-search__title">Заинтересовались?</h2>
-        <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br class="hotel-search__only-tablet">и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="hotel-search__button" href="#">Найти гостиницу</a>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505975266!2d-111.83015799054338!3d34.85437338103421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673829327679!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505975266!2d-111.83015799054338!3d34.85437338103421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673829327679!5m2!1sru!2sru" width="600" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
         </iframe>
         <section class="page-footer__contacts contacts">
           <div class="contacts__wrapper">
@@ -165,6 +171,6 @@
     </footer>
 
 
-
+    <script src="js/script.js"></script>
   </body>
 </html>

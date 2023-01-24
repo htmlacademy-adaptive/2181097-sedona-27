@@ -1,33 +1,28 @@
 .intro {
   text-align: center;
-  margin: 30px 20px 14px 20px;
+  margin: 40px 20px 14px 20px;
 
   @media (min-width: $tablet) {
     width: 100%;
-    height: 246px;
-    padding: 66px 154px;
+    padding: 46px 154px 69px;
     margin: 0;
     font-size: 30px;
     line-height: 26px;
   }
 
   @media (min-width: $desktop) {
-    padding: 100px 370px 65px 370px;
-    height: 288px;
+    padding: 75px 370px 75px 370px;
   }
 }
 
 .intro__title {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   font-weight: 700;
 
   @media (min-width: $tablet) {
     text-align: center;
-  }
-
-  @media (min-width: $desktop) {
     font-size: 30px;
     line-height: 26px;
   }
@@ -40,6 +35,8 @@
   margin-left: auto;
   margin-right: auto;
   color: #333333;
+  font-weight: 400;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
     width: 434px;
@@ -48,22 +45,36 @@
 
   @media (min-width: $desktop) {
     width: 435px;
-    font-size: 21px;
-    line-height: 26px;
+    margin-top: 32px;
+  }
+}
+
+.intro__description--form-intro {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 22px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    width: 444px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 8px;
   }
 }
 
 .intro--form-intro {
   @media (min-width: $tablet) {
     width: 100%;
-    height: 260px;
-    padding: 66px 154px 102px 154px;
+    padding: 36px 154px 62px;
     margin: 0;
     font-size: 30px;
     line-height: 26px;
   }
 
   @media (min-width: $desktop) {
-    padding: 64px 166px 102px 166px;
+    padding: 88px 166px 24px 166px;
   }
 }

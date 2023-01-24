@@ -2,10 +2,10 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 15px;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet) {
     width: 324px;
-    margin-bottom: 12px;
   }
 }
 
@@ -38,9 +38,10 @@
 
   @media (min-width: $tablet) {
     margin: 28px 20px 27px 0;
+    justify-self: flex-end;
   }
 
-  @media (min-width: $desktop){
+  @media (min-width: $desktop) {
     color: #ffffff;
   }
 }
@@ -51,14 +52,29 @@
   margin-right: 14px;
   flex-shrink: 0;
 
+  &:hover,
+    &:focus {
+    opacity: 0.6;
+    }
+
+    &:active {
+    opacity: 0.3;
+    }
+
   @media (min-width: $desktop) {
     fill: #ffffff;
     opacity: 1;
   }
 }
+
 .content-card__photo {
   display: block;
   width: 100%;
+  margin-top: 58px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
 
   @media (min-width: $desktop) {
     width: 100%;
@@ -66,8 +82,11 @@
 }
 
 .content-card--small {
+  margin-top: -16px;
+
   @media (min-width: $tablet) {
     width: 50%;
+    margin: 0;
   }
 
   @media (min-width: $desktop) {
@@ -80,11 +99,12 @@
 }
 
 .content-card__text-block {
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 324px 324px;
     justify-content: space-between;
     padding-right: 20px;
+    background-color: #eaeaea;
   }
 
   @media (min-width: $desktop) {
@@ -96,13 +116,17 @@
     color: #ffffff;
     grid-template-columns: 600px 72px;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0;
   }
 }
+
 .content-card__text-block--small {
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 229px 75px;
     justify-content: space-between;
+    padding: 7px 0 0 20px;
   }
 
   @media (min-width: $desktop) {
@@ -116,10 +140,14 @@
     justify-content: space-between;
   }
 }
+
 .content-card__text-elements {
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     width: 217px;
-    padding: 22px 21px 15px 21px;
+    padding: 7px 21px 14px 21px;
   }
 }
 
+.content-card__text-block--small .content-card__likes-counter {
+  margin: 21px 18px 27px 0;
+}

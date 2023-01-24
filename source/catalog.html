@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
@@ -15,7 +15,7 @@
       <a class="main-header__logo logo">
         <img class="logo__image" src="./img/main/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -40,7 +40,7 @@
     <main class="catalog-container">
       <div class="catalog-container__wrapper">
         <h1 class="visually-hidden">Седона</h1>
-      <section class="hero-block">
+      <section class="hero-block hero-block--inside">
         <div class="hero-block__wrapper">
           <h2 class="visually-hidden">Гостиницы Седоны</h2>
           <img class="hero-block__banner hero-block__banner--catalog-banner" src="./img/catalog/sedona-catalog-hero-text.svg" width="229" height="39" alt="Седона">
@@ -57,10 +57,13 @@
             <div class="content-block__item content-card">
               <a class="content-card__link" href="#">
                 <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/content-photo-desert-desktop.webp 1x, img/catalog/content-photo-desert-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/content-photo-desert-tablet.webp 1x, img/catalog/content-photo-desert-tablet@2x.webp 2x">
+                  <source media="(min-width: 0)" srcset="img/catalog/content-photo-desert-tablet.webp 1x, img/catalog/content-photo-desert-tablet@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/catalog/content-photo-desert-desktop.jpg 1x, img/catalog/content-photo-desert-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog/content-photo-desert-desktop.jpg 1x, img/catalog/content-photo-desert-desktop@2x.jpg 2x">
-                 <img class="content-card__photo" src="img/catalog/" width="320" height="350" srcset="img/catalog/content-photo-desert-mobile@2x.jpg 2x" alt="Фото пустыни Седоны">
-               </picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/content-photo-desert-tablet.jpg 1x, img/catalog/content-photo-desert-tablet@2x.jpg 2x">
+                  <img class="content-card__photo" src="img/catalog/content-photo-desert-mobile.jpg" width="320" height="350" srcset="img/catalog/content-photo-desert-mobile@2x.jpg 2x" alt="Фото пустыни Седоны">
+                </picture>
               </a>
               <div class="content-card__text-block">
                 <div class="content-card__text-elements">
@@ -77,12 +80,15 @@
             <div class="content-block__item content-card content-card--small">
               <a class="content-card__link" href="#">
                 <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/content-photo-flora-desktop.webp 1x, img/catalog/content-photo-flora-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/content-photo-flora-tablet.webp 1x, img/catalog/content-photo-flora-tablet@2x.webp 2x">
+                  <source media="(min-width: 0)" srcset="img/catalog/content-photo-flora-tablet.webp 1x, img/catalog/content-photo-flora-tablet@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/catalog/content-photo-flora-desktop.jpg 1x, img/catalog/content-photo-flora-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog/content-photo-flora-desktop.jpg 1x, img/catalog/content-photo-flora-desktop@2x.jpg 2x">
-                 <img class="content-card__photo" src="img/catalog/" width="320" height="350" srcset="img/catalog/content-photo-flora-mobile@2x.jpg 2x" alt="Фото растительности Седоны">
-               </picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/content-photo-flora-tablet.jpg 1x, img/catalog/content-photo-flora-tablet@2x.jpg 2x">
+                  <img class="content-card__photo" src="img/catalog/content-photo-flora-mobile.jpg" width="320" height="350" srcset="img/catalog/content-photo-flora-mobile@2x.jpg 2x" alt="Фото растительности Седоны">
+                </picture>
               </a>
-              <div class="content-card__text-block--small">
+              <div class="content-card__text-block content-card__text-block--small">
                 <div class="content-card__texts-small">
                   <p class="content-card__title">Местная растительность</p>
                   <span class="content-card__author">Автор фото: Сергей</span>
@@ -99,10 +105,10 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/catalog/content-photo-road-desktop.jpg 1x, img/catalog/content-photo-road-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/content-photo-road-tablet.jpg 1x, img/catalog/content-photo-road-tablet@2x.jpg 2x">
-                 <img class="content-card__photo" src="img/catalog/content-photo-road-mobile.jpg" width="320" height="350" srcset="img/catalog/content-photo-road-mobile@2x.jpg 2x" alt="Фото дорог Седоны">
-               </picture>
+                  <img class="content-card__photo" src="img/catalog/content-photo-road-mobile.jpg" width="320" height="350" srcset="img/catalog/content-photo-road-mobile@2x.jpg 2x" alt="Фото дорог Седоны">
+                </picture>
               </a>
-              <div class="content-card__text-block--small">
+              <div class="content-card__text-block content-card__text-block--small">
                 <div class="content-card__texts-small">
                   <p class="content-card__title">Дорога на север</p>
                   <span class="content-card__author">Автор фото: Петр</span>
@@ -118,11 +124,11 @@
               <a class="content-card__link" href="#">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/catalog/content-photo-bridge-desktop.jpg 1x, img/catalog/content-photo-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog/content-photo-bridge-desktop.jpg 1x, img/catalog/content-photo-bridge-desktop@2x.jpg 2x">
-                 <img class="content-card__photo" src="img/catalog/content-photo-bridge-mobile.jpg" width="320" height="350" srcset="img/catalog/content-photo-bridge-mobile@2x.jpg 2x" alt="Фото Моста Дьявола">
-               </picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/content-photo-bridge-tablet.jpg 1x, img/catalog/content-photo-bridge-tablet@2x.jpg 2x">
+                  <img class="content-card__photo" src="img/catalog/content-photo-bridge-mobile.jpg" width="320" height="350" srcset="img/catalog/content-photo-bridge-mobile@2x.jpg 2x" alt="Фото Моста Дьявола">
+                </picture>
               </a>
-              <div class="content-card__text-block--small">
+              <div class="content-card__text-block content-card__text-block--small">
                 <div class="content-card__texts-small">
                   <p class="content-card__title">Мост дьявола</p>
                   <span class="content-card__author">Автор фото: Антон</span>
@@ -141,8 +147,8 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/catalog/content-video-desktop.jpg 1x, img/catalog/content-video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/content-video-tablet.jpg 1x, img/catalog/content-video-tablet@2x.jpg 2x">
-             <img class="video__file" src="img/catalog/content-video-mobile.jpg" width="320" height="350" srcset="img/catalog/content-video-mobile@2x.jpg 2x" alt="Видео о Седоне">
-           </picture>
+              <img class="video__file" src="img/catalog/content-video-mobile.jpg" width="320" height="350" srcset="img/catalog/content-video-mobile@2x.jpg 2x" alt="Видео о Седоне">
+            </picture>
           </div>
         </div>
       </section>
@@ -187,5 +193,7 @@
         </section>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

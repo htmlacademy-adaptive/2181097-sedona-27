@@ -5,6 +5,16 @@
   text-align: center;
   margin-right: 12px;
 
+  &:hover {
+    background-color:  #81B3D2;
+  }
+  &:focus {
+    background-color:  #81B3D2;
+  }
+  &:active {
+    background-color: #B3B3B3;
+  }
+
   @media (min-width: $tablet) {
     font-size: 14px;
     font-weight: 400;
@@ -18,4 +28,18 @@
 .academy-link__logo {
   width: 26px;
   height: 34px;
+
+  &:hover {
+    fill:  #81B3D2;
+  }
+  &:focus {
+    fill:  #81B3D2;
+  }
+  &:active {
+    fill: #B3B3B3;
+  }
+}
+
+.academy-link__button-site {
+  margin-top: 8px;
 }

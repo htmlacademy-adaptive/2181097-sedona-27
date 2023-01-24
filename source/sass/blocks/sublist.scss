@@ -2,7 +2,7 @@
   font-size: 14px;
   line-height: 21px;
   list-style-type: none;
-  margin: 23px 18px 46px 18px;
+  margin: 0 18px 40px 18px;
   background-color: $base-color;
   padding: 0;
 
@@ -15,7 +15,7 @@
 }
 
 .sublist__item {
-  margin-top: 25px;
+  margin-top: 27px;
   position: relative;
   text-align: left;
   padding-left: 47px;
@@ -26,76 +26,97 @@
     height: 40px;
     background-size: 40px 40px;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
 
-  @media (min-width: $tablet) {
-    margin: 0 auto;
-    position: static;
-    display: block;
-    margin-bottom: 26px;
-    width: 77px;
-    height: 72px;
-    background-size: 77px 72px;
+    &:hover,
+    &:focus {
+    opacity: 0.6;
+    }
+
+    &:active {
+    opacity: 0.3;
+    }
+
+    @media (min-width: $tablet) {
+      margin: 0 auto;
+      position: static;
+      display: block;
+      margin-bottom: 26px;
+      width: 77px;
+      height: 72px;
+      background-size: 77px 72px;
+    }
   }
+
+  &--housing::before {
+    background-image: url("../img/main/icon-house-advantages.svg");
+    margin-top: -10px;
   }
-&--housing::before{
-  background-image: url("../img/main/icon-house-advantages.svg");
-}
-&--food::before{
-  background-image: url("../img/main/icon-burger-advantages.svg");
-}
-&--souvenire::before{
-  background-image: url("../img/main/icon-gift-advantages.svg");
-}
+
+  &--food::before {
+    background-image: url("../img/main/icon-burger-advantages.svg");
+    margin-top: -5px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &--souvenire::before {
+    background-image: url("../img/main/icon-gift-advantages.svg");
+    top: -9px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: $tablet) {
+      width: 78px;
+      height: 75px;
+      margin-bottom: 24px;
+    }
+  }
+
   @media (min-width: $tablet) {
     width: 256px;
-    height: 256px;
     margin: 0 auto;
-    padding: 60px 33px;
+    padding: 70px 33px 20px;
     text-align: center;
-    height: 331px;
+    min-height: 331px;
   }
 
   @media (min-width: $desktop) {
     width: 400px;
-    padding: 59px 60px 59px 60px;
+    padding: 80px 60px 59px 60px;
   }
 }
 
-.item__title {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-
-  @media (min-width: $tablet){
-    font-size: 21px;
-    line-height: 26px;
-  }
-}
-
-.item__description {
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-  text-transform: uppercase;
+.sublist__item--food {
+  margin-top: 30px;
+  position: relative;
+  text-align: left;
+  padding-left: 47px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 60px;
-    font-size: 21px;
-    line-height: 21px;
+    margin-top: 0;
+    padding-left: 33px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 58px;
   }
 }
 
-.sublist__item:nth-child(2) {
-  @media (min-width: $desktop) {
-    padding: 72px 50px 71px 50px;
-  }
-}
+.sublist__item--souvenire {
+  margin-top: 36px;
 
-.sublist__item:nth-child(3) {
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    padding: 59px 40px 20px;
+  }
+
   @media (min-width: $desktop) {
-    padding: 69px 50px 67px 50px;
+    padding-top: 70px;
   }
 }

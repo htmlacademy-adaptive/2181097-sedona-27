@@ -6,35 +6,42 @@
   font-weight: 700;
   border: none;
   width: 280px;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet) {
     width: 648px;
-    height: 162px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop) {
     width: 100%;
-    height: 272px;
   }
 }
 
 .radio__list {
   align-items: center;
   list-style: none;
+  margin-top: 20px;
+  width: 280px;
+  padding: 0;
 
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    padding: 0;
+    padding: 0 37px;
     width: 648px;
+    gap: 14px;
   }
 
   @media (min-width: $desktop) {
     margin: 0 auto;
     width: 960px;
     display: flex;
+    padding: 14px 54px;
+    gap: 63px;
   }
 }
 
@@ -42,21 +49,29 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  width: 233px;
+  margin-left: 23px;
+  margin-top: 45px;
 
   @media (min-width: $tablet) {
     width: 402px;
     height: 26px;
     font-size: 21px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 }
 
 .radio__item {
   height: 46px;
-  margin-top: 20px;
+  margin-top: 17px;
 
   @media (min-width: $tablet) {
     width: 280px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
   }
 }

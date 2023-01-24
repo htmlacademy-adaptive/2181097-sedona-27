@@ -5,12 +5,23 @@
   border-radius: 4px;
   margin-right: 16px;
   position: relative;
+
+  &:hover,
+  &:focus {
+  background-color: #E5E5E5;
+  }
+
+  &:active {
+  background-color: #D5D5D5;
+  }
 }
+
 .checkbox-block__label {
   display: flex;
   align-items: center;
 }
-.checkbox-block__input:checked +.checkbox-block__label .checkbox-block__mark {
+
+.checkbox-block__input:checked + .checkbox-block__label .checkbox-block__mark {
   &::after {
     content: "";
     width: 22px;
