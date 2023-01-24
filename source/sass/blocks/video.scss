@@ -6,32 +6,36 @@
   text-transform: uppercase;
   margin-bottom: 23px;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     font-size: 30px;
     line-height: 26px;
+    margin: 0 0 30px;
   }
 }
 
 .video__file {
-  margin-top: 38px;
+  margin-top: 43px;
 
   @media (min-width: $tablet) {
     width: 648px;
     height: 500px;
+    margin-top: 91px;
   }
 
   @media (min-width: $desktop) {
     width: 800px;
-    margin-top: 64px;
+    margin-top: 84px;
   }
 }
 
 .video__description {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 
-  @media (min-width: $desktop) {
-    font-size: 21px;
-    line-height: 26px;
+  @media (min-width: $tablet) {
+    display: block;
+    margin: 0 auto;
+    max-width: 450px;
   }
 }

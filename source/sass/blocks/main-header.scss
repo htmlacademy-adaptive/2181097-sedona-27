@@ -14,11 +14,10 @@
 .main-header__logo {
   margin: 0 auto;
 
-  @media (min-width: $tablet){
+  @media (min-width: $tablet) {
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
   }
 }
-

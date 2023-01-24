@@ -1,3 +1,9 @@
+.item__only-tablet {
+  @media (max-width: $tablet - 1px) {
+    display: none;
+  }
+}
+
 .item__photo {
   background-color: $background-color;
   width: 100%;
@@ -7,7 +13,9 @@
     object-fit: cover;
     display: block;
     height: 256px;
+    margin-top: 0;
   }
+
   @media (min-width: $desktop) {
     object-fit: cover;
     display: block;
@@ -21,10 +29,28 @@
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+  }
 }
 
 .item__description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
   margin-top: 17px;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 22px;
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 .item__number {
@@ -38,7 +64,7 @@
 
   @media (min-width: $tablet) {
     width: 33.33%;
-    height: 256px;
+    min-height: 256px;
     padding: 52px 33px 31px 33px;
   }
 
@@ -54,6 +80,16 @@
   position: relative;
   padding: 49px 18px 26px;
 
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 55px 25px 26px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 55px 65px 26px;
+  }
+
   &::after {
     background-image: url("../img/main/white-copy.svg");
     position: absolute;
@@ -64,6 +100,18 @@
     background-size: auto 100%;
     width: 100%;
     content: "";
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  .item__title {
+    @media (min-width: $desktop) {
+      max-width: 210px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
@@ -71,17 +119,16 @@
   color: #ffffff;
   margin-top: 38px;
   margin-bottom: -34px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 54px 30px 20px;
+  }
 }
 
 .item__template {
   @media (min-width: $tablet) {
-    width: 256px;
-    height: 256px;
-    color:  #000000;
-  }
-
-  @media (min-width: $desktop) {
-    width: 400px;
+    color: #000000;
   }
 }
 
@@ -93,12 +140,14 @@
 
   @media (min-width: $tablet) {
     width: 33.33%;
-    padding: 52px 33px 31px 33px;
-    height: 256px;
+    min-height: 260px;
+    padding: 58px 33px 31px 33px;
+    background-color: #eeeeee;
+    display: block;
   }
 
   @media (min-width: $desktop) {
-    padding: 63px 50px 41px 50px;
+    padding: 58px 50px 40px;
   }
 }
 
@@ -109,10 +158,58 @@
     padding: 52px 50px 51px 50px;
   }
 }
+
 .item--someshit {
   color: #ffffff;
 
   @media (min-width: $tablet) {
     flex-direction: row-reverse;
+  }
+}
+
+.item__text-block--city .item__description,
+.item__text-block--bridge .item__description {
+  color: #ffffff;
+}
+
+.item__text-block--bridge .item__description {
+  @media (min-width: $desktop) {
+    padding: 0 54px;
+  }
+}
+
+.item--road {
+  padding: 40px 34px 0;
+
+  @media (min-width: $tablet) {
+    padding: 47px 40px 35px;
+  }
+}
+
+.item--tourists {
+  padding: 40px 35px 0;
+
+  @media (min-width: $tablet) {
+    padding: 58px 33px 35px;
+  }
+}
+
+.item--text-item .item__number {
+  color: #333333;
+}
+
+.item--text-item .item__title {
+  @media (min-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 160px;
+  }
+}
+
+.item--padding {
+  @media (min-width: $desktop) {
+    .item__title {
+      margin-top: 10px;
+    }
   }
 }

@@ -1,3 +1,7 @@
+.review-block {
+  padding-bottom: 30px;
+}
+
 .review-block__button {
   background-color: $background-color;
   width: 280px;
@@ -5,19 +9,22 @@
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 46px;
+  margin-top: 37px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   padding: 16px 49px;
-  font-size: 18px;
-  line-height: 26px;
   color: #ffffff;
+  border: none;
 
   @media (min-width: $tablet) {
     width: 324px;
     height: 58px;
     margin: 0 auto 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 384px;
   }
 }
 
@@ -28,15 +35,20 @@
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;
   margin-left: 164px;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+  }
 }
 
 .review-block__primary-block {
   @media (min-width: $tablet) {
     display: flex;
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop) {
-    padding: 0 60px 60px 60px;
+    padding: 0 117px 10px;
   }
 }
 
@@ -44,9 +56,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    width: 648px;
-    height: 162px;
-    padding: 62px 60px 58px 60px;
+    padding: 48px 60px 28px;
     align-items: center;
   }
 }
@@ -55,11 +65,12 @@
   @media (min-width: $tablet) {
     display: flex;
     width: 648px;
-    margin: 48px auto 64px auto;
+    margin: 49px auto 51px auto;
     align-items: center;
     justify-content: space-between;
   }
-}
-.user-contacts__field {
-  background-image: url("../img/form/phone");
+
+  @media (min-width: $desktop) {
+    width: 768px;
+  }
 }

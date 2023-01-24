@@ -28,17 +28,16 @@
 .content-block__video {
   display: block;
   text-align: center;
-  padding-left: 26px;
-  padding-right: 26px;
+  padding: 0 22px;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 32px;
 
   @media (min-width: $tablet) {
-    height: 788px;
-    padding: 60px 60px 40px 60px;
+    padding: 10px 60px 56px 60px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop) {
-    padding: 62px 201px 120px 201px;
+    padding: 22px 201px 102px 201px;
   }
 }

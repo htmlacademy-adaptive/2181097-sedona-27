@@ -8,12 +8,11 @@
 
   @media (min-width: $tablet) {
     width: 648px;
-    height: 190px;
-    margin: 64px 60px 48px 60px;
+    margin: 20px 60px 54px 60px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 auto;
+    margin: 30px auto 0;
   }
 }
 
@@ -25,14 +24,16 @@
   @media (min-width: $tablet) {
     display: flex;
     width: 480px;
-    height: 92px;
+    margin: 15px auto 0;
     flex-wrap: wrap;
+    gap: 17px 30px;
   }
 
   @media (min-width: $desktop) {
-    margin: 28px auto;
+    margin: 48px auto 100px;
     display: flex;
-    width: 960px;
+    width: 870px;
+    gap: 17px 64px;
   }
 }
 
@@ -43,6 +44,7 @@
   margin-top: 19px;
 
   @media (min-width: $tablet) {
+    font-size: 21px;
     width: 308px;
     height: 52px;
     margin: 0 auto;
@@ -59,10 +61,15 @@
     font-size: 18px;
     line-height: 26px;
   }
-  &+& {
+
+  @media (min-width: $desktop) {
+    width: auto;
+  }
+
+  & + & {
     margin-top: 16px;
 
-    @media (min-width: $tablet){
+    @media (min-width: $tablet) {
       margin-top: 0;
     }
   }

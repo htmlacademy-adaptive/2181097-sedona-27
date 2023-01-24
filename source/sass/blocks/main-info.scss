@@ -10,6 +10,11 @@
   @media (min-width: $tablet) {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 15px;
   }
 }
 
@@ -24,6 +29,10 @@
   line-height: 26px;
   padding-left: 16px;
   margin-bottom: 16px;
+
+  @media (min-width: $desktop) {
+    width: 430px;
+  }
 }
 
 .main-info__field-title {
@@ -45,8 +54,6 @@
   @media (min-width: $tablet) {
     width: 50%;
     display: grid;
-    margin-left: 60px;
-    margin-right: 42px;
     padding: 0;
   }
 }

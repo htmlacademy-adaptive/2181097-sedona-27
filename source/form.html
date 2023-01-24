@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
@@ -40,7 +40,7 @@
     <main class="catalog-container">
       <div class="catalog-container__wrapper">
         <h1 class="visually-hidden">Седона</h1>
-      <section class="hero-block">
+      <section class="hero-block hero-block--inside">
         <div class="hero-block__wrapper">
           <h2 class="visually-hidden">Гостиницы Седоны</h2>
           <img class="hero-block__banner hero-block__banner--catalog-banner" src="./img/catalog/sedona-catalog-hero-text.svg" width="229" height="39" alt="Седона">
@@ -48,9 +48,9 @@
       </section>
       <section class="review-block">
         <div class="review-block__wrapper">
-          <div class="intro--form-intro">
+          <div class="intro intro--form-intro">
             <h1 class="intro__title">Оставьте свой отзыв</h1>
-            <p class="intro__description--form-intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <p class="intro__description intro__description--form-intro">Помогите&nbsp;нашим&nbsp;отелям&nbsp;стать&nbsp;лучше! оставьте&nbsp;отзыв&nbsp;о&nbsp;них, а&nbsp;также&nbsp;о посещенных&nbsp;вами достопримечательностях</p>
           </div>
           <form class="review-block-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="review-block__primary-block">
@@ -113,8 +113,7 @@
           </fieldset>
           <fieldset class="review-block__texts review-texts">
             <label class="review-texts__field" for="text-review">Опишите свои эмоции:</label>
-            <textarea class="review-texts__text review-texts__text--noresize" id="text-review" name="review-text" placeholder="Опишите подробно все свои восторги">
-            </textarea>
+            <textarea class="review-texts__text review-texts__text--noresize" id="text-review" name="review-text" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="review-block__footer">
             <button class="review-block__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -166,7 +165,6 @@
           </section>
         </div>
       </footer>
-
-    <script src="script.js"></script>
+      <script src="js/script.js"></script>
   </body>
 </html>

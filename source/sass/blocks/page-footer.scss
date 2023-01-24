@@ -5,10 +5,12 @@
 .page-footer__map {
   margin-top: 50px;
   max-width: 100%;
+  border: none;
 
   @media (min-width: $tablet) {
     width: 768px;
     height: 350px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop) {
@@ -23,4 +25,11 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    width: 128px;
+    height: 34px;
+    display: flex;
+    margin: 0;
+  }
 }
