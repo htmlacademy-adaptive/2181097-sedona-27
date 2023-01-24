@@ -53,13 +53,13 @@
   flex-shrink: 0;
 
   &:hover,
-    &:focus {
+  &:focus {
     opacity: 0.6;
-    }
+  }
 
-    &:active {
+  &:active {
     opacity: 0.3;
-    }
+  }
 
   @media (min-width: $desktop) {
     fill: #ffffff;

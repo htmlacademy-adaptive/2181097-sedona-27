@@ -6,13 +6,15 @@
   margin-right: 12px;
 
   &:hover {
-    background-color:  #81B3D2;
+    background-color: #81b3d2;
   }
+
   &:focus {
-    background-color:  #81B3D2;
+    background-color: #81b3d2;
   }
+
   &:active {
-    background-color: #B3B3B3;
+    background-color: #b3b3b3;
   }
 
   @media (min-width: $tablet) {
@@ -30,13 +32,15 @@
   height: 34px;
 
   &:hover {
-    fill:  #81B3D2;
+    fill: #81b3d2;
   }
+
   &:focus {
-    fill:  #81B3D2;
+    fill: #81b3d2;
   }
+
   &:active {
-    fill: #B3B3B3;
+    fill: #b3b3b3;
   }
 }
 
