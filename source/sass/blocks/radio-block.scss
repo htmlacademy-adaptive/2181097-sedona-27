@@ -6,14 +6,12 @@
   margin-right: 16px;
   position: relative;
 
-
-  &:hover,
-  &:focus {
-  background-color: #E5E5E5;
+  &:hover {
+    background-color: #e5e5e5;
   }
 
   &:active {
-  background-color: #D5D5D5;
+    background-color: #d5d5d5;
   }
 }
 
@@ -34,4 +32,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.radio-block__input:focus + .radio-block__label .radio-block__mark-radio {
+  background-color: #e5e5e5;
 }

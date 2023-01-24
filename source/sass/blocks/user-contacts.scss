@@ -55,11 +55,11 @@
 
   &:hover,
   &:focus {
-  background-color: #E5E5E5;;
+    background-color: #e5e5e5;
   }
 
   &:active {
-  background-color: #ffffff;
+    background-color: #ffffff;
   }
 
   @media (min-width: $tablet) {
@@ -74,6 +74,7 @@
 
 .user-contacts__field--phone {
   background-image: url("../img/form/phone-frame.svg");
+  appearance: none;
 }
 
 .user-contacts__field--mail {
