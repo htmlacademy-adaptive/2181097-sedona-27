@@ -1,0 +1,168 @@
+.modal-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 2;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-container--hidden {
+  display: none;
+}
+
+.modal-container__failure {
+  font-size: 18px;
+  font-weight: 26px;
+  text-transform: uppercase;
+  padding: 45px 42px 35px 41px;
+  margin: 0;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 400px;
+    padding: 50px 47px 49px 47px;
+  }
+}
+
+.modal-container__title-failure {
+  font-size: 21px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.modal-container__title-success {
+  font-size: 21px;
+  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.modal-container__subtitle-failure {
+  text-align: center;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+.modal-container__subtitle-success {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 18px;
+  width: 320px;
+  margin-left: 37px;
+  margin-right: 39px;
+
+  @media (min-width: $tablet) {
+    margin: 53px 99px 30px 97px;
+    width: 640px;
+  }
+}
+.modal-container__button-failure {
+  width: 180px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding: 18px 64px 14px 63px;
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-left: 38px;
+  margin-top: 25px;
+  margin-right: 38px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet){
+    margin-left: 64px;
+    margin-top: 25px;
+    margin-right: 64px;
+}
+}
+
+.modal-container__success {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 39px 39px 20px 37px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    padding: 53px 99px 0 97px;
+  }
+}
+
+.modal-container__button-success {
+  width: 280px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding: 18px 62px 14px 60px;
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0 20px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    width: 458px;
+    font-size: 21px;
+    line-height: 26px;
+    padding: 18px 140px 13px 139px;
+  }
+}
+
+.modal-container__button-backround {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #f2f2f2;
+  margin-top: 60px;
+
+  @media (min-width: $tablet) {
+    padding: 44px 190px;
+    margin-top: 30px;
+    width: 100%;
+  }
+}
