@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
+  max-width: 300px;
   justify-content: center;
   margin-top: 33px;
 
