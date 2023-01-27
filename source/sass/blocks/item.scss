@@ -18,6 +18,8 @@
 
   @media (min-width: $desktop) {
     object-fit: cover;
+    height: 100%;
+    min-height: 256px;
     display: block;
   }
 }

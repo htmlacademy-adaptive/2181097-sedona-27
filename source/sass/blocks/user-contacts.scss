@@ -52,6 +52,12 @@
   width: 280px;
   margin-top: -14px;
   padding-left: 12px;
+  color: #000000;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+  }
 
   &:hover,
   &:focus {
@@ -86,6 +92,7 @@
   line-height: 21px;
   margin-left: -88px;
   margin-top: 17px;
+  color: #333333;
 
   @media (min-width: $tablet) {
     text-align: left;

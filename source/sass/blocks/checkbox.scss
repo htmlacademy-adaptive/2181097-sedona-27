@@ -75,11 +75,3 @@
   }
 }
 
-.checkbox-block__label {
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.checkbox-block__input:focus + .checkbox-block__label .checkbox-block__mark {
-  background-color: #e5e5e5;
-}

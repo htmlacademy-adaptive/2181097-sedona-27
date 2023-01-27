@@ -21,7 +21,8 @@
   }
 
   @media (min-width: $desktop) {
-    height: 331px;
+    height: auto;
+    min-height: 331px;
   }
 }
 
@@ -47,7 +48,7 @@
 
   &:active {
     background-color: #5496bd;
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &:disabled {
@@ -85,6 +86,7 @@
   text-transform: uppercase;
   padding-left: 29px;
   padding-right: 29px;
+  color: #333333;
 
   @media (min-width: $tablet) {
     font-size: 14px;

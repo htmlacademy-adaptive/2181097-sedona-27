@@ -30,6 +30,11 @@
   padding-left: 16px;
   margin-bottom: 16px;
 
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+  }
+
   @media (min-width: $desktop) {
     width: 430px;
   }
@@ -41,6 +46,7 @@
   font-weight: 400;
   margin-left: 18px;
   text-transform: uppercase;
+  color: #333333;
 
   @media (min-width: $tablet) {
     text-transform: uppercase;
