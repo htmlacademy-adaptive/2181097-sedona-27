@@ -59,6 +59,42 @@
     font-size: 21px;
     text-align: center;
     margin: 0 auto 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 132px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 13px;
+      left: -129px;
+    }
+
+    &::before {
+      position: absolute;
+      width: 132px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 13px;
+      right: -129px;
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after,
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      left: -281px;
+    }
+
+    &::before {
+      right: -281px;
+    }
   }
 }
 

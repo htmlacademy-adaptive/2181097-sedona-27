@@ -48,6 +48,43 @@
     width: 308px;
     height: 52px;
     margin: 0 auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 132px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 24px;
+      left: -169px;
+    }
+
+    &::before {
+      position: absolute;
+      width: 132px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 24px;
+      right: -169px;
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after,
+    &::before {
+      width: 280px;
+      top: 24px;
+    }
+
+    &::after {
+      left: -327px;
+    }
+
+    &::before {
+      right: -327px;
+    }
   }
 }
 
@@ -74,4 +111,3 @@
     }
   }
 }
-

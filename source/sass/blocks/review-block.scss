@@ -10,7 +10,7 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 37px;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   padding: 16px 49px;
@@ -62,10 +62,26 @@
   @media (min-width: $tablet) {
     display: flex;
     padding: 0 60px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #e7e5e5;
+      left: 50%;
+      top: 0;
+      content: "";
+    }
   }
 
   @media (min-width: $desktop) {
     padding: 0 117px 10px;
+    margin-top: 5px;
+
+    &::after {
+      left: calc(50% + 13px);
+    }
   }
 }
 
