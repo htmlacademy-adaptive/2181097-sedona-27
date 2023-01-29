@@ -21,7 +21,8 @@
   }
 
   @media (min-width: $desktop) {
-    height: 331px;
+    height: auto;
+    min-height: 331px;
   }
 }
 
@@ -47,7 +48,7 @@
 
   &:active {
     background-color: #5496bd;
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &:disabled {
@@ -56,7 +57,7 @@
 
   @media (min-width: $tablet) {
     width: 458px;
-    margin-top: 42px;
+    margin-top: 39px;
     font-size: 21px;
     line-height: 26px;
     color: #ffffff;
@@ -85,11 +86,12 @@
   text-transform: uppercase;
   padding-left: 29px;
   padding-right: 29px;
+  color: #333333;
 
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 21px;
-    margin-top: 30px;
+    margin-top: 33px;
     padding: 0;
   }
 }

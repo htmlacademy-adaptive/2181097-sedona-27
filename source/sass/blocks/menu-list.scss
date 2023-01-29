@@ -30,16 +30,31 @@
   &:hover {
     background-color: #669ec0;
     color: #ffffff;
+
+    @media (min-width: $tablet) {
+      color: #81b3d2;
+      background-color: transparent;
+    }
   }
 
   &:focus {
     background-color: #669ec0;
     color: #ffffff;
+
+    @media (min-width: $tablet) {
+      color: #81b3d2;
+      background-color: transparent;
+    }
   }
 
   &:active {
     background-color: #5496bd;
     color: #ffffff;
+
+    @media (min-width: $tablet) {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+    }
   }
 
   @media (min-width: $tablet) {

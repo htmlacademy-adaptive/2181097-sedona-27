@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet) {
     width: 100%;
-    padding: 46px 154px 69px;
+    padding: 40px 154px 69px;
     margin: 0;
     font-size: 30px;
     line-height: 26px;
@@ -25,6 +25,11 @@
     text-align: center;
     font-size: 30px;
     line-height: 26px;
+    margin-top: 27px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 25px;
   }
 }
 
@@ -41,6 +46,7 @@
   @media (min-width: $tablet) {
     width: 434px;
     text-align: center;
+    margin-top: 31px;
   }
 
   @media (min-width: $desktop) {
@@ -68,7 +74,7 @@
 .intro--form-intro {
   @media (min-width: $tablet) {
     width: 100%;
-    padding: 36px 154px 62px;
+    padding: 36px 154px 56px;
     margin: 0;
     font-size: 30px;
     line-height: 26px;

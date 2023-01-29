@@ -4,17 +4,23 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet) {
     font-size: 30px;
     line-height: 26px;
     margin: 0 0 30px;
   }
+
+
+  @media (min-width: $desktop) {
+    margin: -4px 0 30px;
+  }
 }
 
 .video__file {
-  margin-top: 43px;
+  margin-top: 37px;
+  height: 177px;
 
   @media (min-width: $tablet) {
     width: 648px;
@@ -24,7 +30,29 @@
 
   @media (min-width: $desktop) {
     width: 800px;
-    margin-top: 84px;
+    margin-top: 88px;
+  }
+}
+
+.video__wrapper {
+  position: relative;
+}
+
+.video__play-button {
+  position: absolute;
+  background-image: url("../img/catalog/play-button.svg");
+  background-size: 48px 54px;
+  width: 48px;
+  height: 54px;
+  background-color: transparent;
+  left: 50%;
+  top: 99px;
+  transform: translate(-50%, 0);
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet) {
+    top: 311px;
   }
 }
 

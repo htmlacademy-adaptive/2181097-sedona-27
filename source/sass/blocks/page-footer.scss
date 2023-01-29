@@ -31,5 +31,13 @@
     height: 34px;
     display: flex;
     margin: 0;
+    margin-right: -18px;
+    margin-top: -34px;
+  }
+}
+
+.page-footer__copyright--index {
+  @media (min-width: $tablet) {
+    margin: -34px -2px 0 0;
   }
 }

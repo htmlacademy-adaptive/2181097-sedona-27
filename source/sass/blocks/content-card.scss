@@ -1,7 +1,7 @@
 .content-card__title {
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 17px;
   margin-bottom: 2px;
 
   @media (min-width: $tablet) {
@@ -16,11 +16,13 @@
   @media (min-width: $tablet) {
     width: 648px;
     position: relative;
+    margin-top: -3px;
   }
 
   @media (min-width: $desktop) {
     width: 100%;
     position: relative;
+    margin-top: 2px;
   }
 }
 
@@ -49,7 +51,7 @@
 .content-card__likes-icon {
   fill: #000000;
   opacity: 0.3;
-  margin-right: 14px;
+  margin-right: 9px;
   flex-shrink: 0;
 
   &:hover,
@@ -70,10 +72,12 @@
 .content-card__photo {
   display: block;
   width: 100%;
-  margin-top: 58px;
+  margin-top: 59px;
+  height: 280px;
 
   @media (min-width: $tablet) {
     margin-top: 0;
+    height: 400px;
   }
 
   @media (min-width: $desktop) {
@@ -81,8 +85,26 @@
   }
 }
 
+.content-card--small .content-card__photo {
+  @media (min-width: $tablet) {
+    height: 267px;
+  }
+}
+
+.content-card--small .content-card__title {
+  @media (min-width: $tablet) {
+    margin-top: 14px;
+  }
+}
+
+.content-card--small .content-card__likes-icon {
+  @media (min-width: $tablet) {
+    margin-top: 12px;
+  }
+}
+
 .content-card--small {
-  margin-top: -16px;
+  margin-top: -11px;
 
   @media (min-width: $tablet) {
     width: 50%;
@@ -110,7 +132,7 @@
   @media (min-width: $desktop) {
     z-index: 2;
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     right: 0;
     width: 100%;
     color: #ffffff;
@@ -149,5 +171,5 @@
 }
 
 .content-card__text-block--small .content-card__likes-counter {
-  margin: 21px 18px 27px 0;
+  margin: 7px 19px 27px 0;
 }

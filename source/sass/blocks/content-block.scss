@@ -30,14 +30,15 @@
   text-align: center;
   padding: 0 22px;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 47px;
 
   @media (min-width: $tablet) {
     padding: 10px 60px 56px 60px;
-    margin-top: 40px;
+    margin-top: 46px;
   }
 
   @media (min-width: $desktop) {
     padding: 22px 201px 102px 201px;
+    margin-top: 44px;
   }
 }

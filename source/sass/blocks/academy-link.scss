@@ -5,18 +5,6 @@
   text-align: center;
   margin-right: 12px;
 
-  &:hover {
-    background-color: #81b3d2;
-  }
-
-  &:focus {
-    background-color: #81b3d2;
-  }
-
-  &:active {
-    background-color: #b3b3b3;
-  }
-
   @media (min-width: $tablet) {
     font-size: 14px;
     font-weight: 400;
@@ -30,20 +18,24 @@
 .academy-link__logo {
   width: 26px;
   height: 34px;
-
-  &:hover {
-    fill: #81b3d2;
-  }
-
-  &:focus {
-    fill: #81b3d2;
-  }
-
-  &:active {
-    fill: #b3b3b3;
-  }
+  fill: currentColor;
 }
 
 .academy-link__button-site {
+  color: #000000;
   margin-top: 8px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }

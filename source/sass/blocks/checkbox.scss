@@ -48,6 +48,43 @@
     width: 308px;
     height: 52px;
     margin: 0 auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 132px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 24px;
+      left: -169px;
+    }
+
+    &::before {
+      position: absolute;
+      width: 132px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 24px;
+      right: -169px;
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after,
+    &::before {
+      width: 280px;
+      top: 24px;
+    }
+
+    &::after {
+      left: -327px;
+    }
+
+    &::before {
+      right: -327px;
+    }
   }
 }
 
@@ -73,13 +110,4 @@
       margin-top: 0;
     }
   }
-}
-
-.checkbox-block__label {
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.checkbox-block__input:focus + .checkbox-block__label .checkbox-block__mark {
-  background-color: #e5e5e5;
 }

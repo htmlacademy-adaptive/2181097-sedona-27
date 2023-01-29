@@ -1,15 +1,33 @@
 .social {
-  margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
+  max-width: 300px;
   justify-content: center;
-  margin-top: 33px;
+  margin: 33px;
 
   @media (min-width: $tablet) {
     margin-top: 0;
     padding-top: 4px;
+    margin-left: 28px;
   }
+}
+
+.social--form {
+  @media (min-width: $tablet) {
+    margin-left: 6px;
+  }
+}
+
+.social--catalog {
+  @media (min-width: $tablet) {
+    margin-left: 9px;
+  }
+}
+
+.social__svg {
+  fill: #ffffff;
 }
 
 .social__link {
@@ -30,6 +48,9 @@
 
   &:active {
     background-color: #5496bd;
-    opacity: 0.3;
+
+    .social__svg {
+      fill: rgba(255, 255, 255, 0.3);
+    }
   }
 }

@@ -10,6 +10,7 @@
     height: 26px;
     margin: 0;
     padding-top: 8px;
+    margin-top: -41px;
   }
 }
 
@@ -17,7 +18,7 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  margin-top: 36px;
+  margin-top: 40px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -29,6 +30,14 @@
 
   @media (min-width: $desktop) {
     padding: 15px 135px 40px 104px;
+  }
+}
+
+.contacts__wrapper--index {
+  margin-top: 48px;
+
+  @media (min-width: $tablet) {
+    margin-top: 16px;
   }
 }
 
